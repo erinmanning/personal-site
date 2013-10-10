@@ -1,0 +1,229 @@
+@import '_variables';
+@import '_mixins';
+@import '_html5Reset';
+
+
+/* BASE
+-------------------------------------------------------------------------------*/
+
+body {
+	background: #dddddd;	
+	font: normal 100%/1.5 $default-font-family, Helvetica, Arial, sans-serif;
+	-moz-transition: font-size 0.2s linear;
+	-o-transition: font-size 0.2s linear;
+	-ms-transition: font-size 0.2s linear;
+	-webkit-transition: font-size 0.2s linear;
+	transition: font-size 0.2s linear;
+}
+
+/* body.grid {
+	 background-image:url(../img/grid.gif);
+} */
+
+body, select, input, textarea {color: $default-text-color;}
+
+a {color: $default-link-color;}
+a:hover {color: $default-hover-color;}
+
+/* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: $violet; color: #fff; text-shadow: none;}
+::selection {background: $violet; color: #fff; text-shadow: none;} 
+
+/*	j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: $skyblue} 
+
+ins {background-color: $yellow; color: #000; text-decoration: none;}
+mark {background-color: $yellow; color: #000; font-style: italic; font-weight: bold;}
+
+/*STRUCTURE
+-------------------------------------------------------------------------------*/
+
+.wrapper {
+	width:100%;
+	margin: 0 auto;
+}
+
+.bio {
+	padding: {
+		top: (29/ 16) + em;
+		left: 1.5em;
+		bottom: (25/ 16) + em;
+		right: 1.5em;
+	}
+	max-width: 960px;
+}
+
+/* COLOR
+-------------------------------------------------------------------------------*/
+header a {
+	@include rgba-background($yellow, .6);
+	&:hover {
+		@include rgba-background($yellow, .9);
+	}
+}
+
+#about {
+	background-color: $yellow;
+}
+
+.work {
+	@include rgba-background($lime, .5);
+	&:hover {
+		@include rgba-background($lime, .9);
+	}
+}
+
+.blog {
+	@include rgba-background($aqua, .7);
+	&:hover {
+		@include rgba-background($aqua, .9);
+	}
+}
+
+.twitter {
+	@include rgba-background($skyblue, .7);
+	&:hover {
+		@include rgba-background($skyblue, .9);		
+	}
+}
+
+.books {
+	@include rgba-background($periwinkle, .7);
+	&:hover {
+		@include rgba-background($periwinkle, .9);
+	}
+}
+
+.music{
+	@include rgba-background($magenta, .7);
+	&:hover {
+		@include rgba-background($magenta, .9);
+	}
+}
+
+/* TYPOGRAPHY
+-------------------------------------------------------------------------------*/
+header a, .socialmedia a {
+	@include font-size-rems(44, 16);
+	line-height: (48 / 44) + em;
+	text-transform: uppercase;
+	font-family: $default-font-family;
+	font-weight: 800;
+	color: white;
+	text-shadow: 5px 4px 0 rgba(black, .1);
+	display: block;
+	padding: .54545455em; // 24/44
+	position: relative;
+	&:hover {
+		color: white;
+		@include transition-all(.2s, ease-out);
+	}
+}
+
+header a {
+	padding-top: (30 / 44) + em;
+}
+
+p {
+	@include font-size-rems(16, 16);
+	margin-bottom: (24 / 16) + em;
+	a {
+		text-decoration: underline;
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+footer p {
+	padding: (24 / 18) + em;
+}
+
+/* ABOUT SECTION
+-------------------------------------------------------------------------------*/
+
+.headshot {
+	max-width: 100%;
+	border-radius: 50% 50% 50% 50%;
+	margin-bottom: (20 / 16) + em;
+}
+
+/* MEDIA QUERIES
+-------------------------------------------------------------------------------*/
+
+@media only screen and (min-width:480px) {
+	
+	.bio {
+		padding-top: (23 / 16) + em;
+	}
+	
+	.headshot {
+		margin: 0 4% 4% 0;
+		width: 30%;
+		float: left;
+	}
+}
+
+@media only screen and (min-width:768px) and (orientation: landscape) {
+	
+	.headshot {
+		margin-bottom:0;
+	}
+	
+	.bio {
+		padding-bottom: (29/ 16) + em;
+	}
+}
+
+@media only screen and (min-width:768px) {
+	
+	.bio {
+		padding-bottom: (25/ 16) + em;
+	}
+	
+	p {
+		@include font-size-rems(18, 16);
+		line-height: (24 / 18) + em;
+		margin-bottom: (24 / 18) + em;
+	}
+	
+	footer p {
+		padding: (24 / 18) + em;
+	}
+
+}
+
+@media only screen and (min-width:1300px) {
+
+	header a, .socialmedia a {
+		@include font-size-rems(68, 16);
+		line-height: (72 / 68) + em;
+		text-shadow: 5px 4px 0 rgba(black, .1);
+		padding: (24 / 68) + em;
+	}
+	
+	header a {
+		padding-top: (32 / 68) + em	;
+	}
+	
+	p {
+		@include font-size-rems(30, 16);
+		line-height: (48 / 30) + em;
+		margin-bottom: (24 / 30) + em;
+	}
+	
+	.bio {
+		padding-bottom: (35/ 16) + em;
+		padding-top: 28px;
+		max-width:1550px;
+	}
+
+	.headshot {
+		margin-right: 3%;
+		margin-left: 1%;
+	}
+
+}
+
+
+@import '_print';

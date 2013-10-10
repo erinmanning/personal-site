@@ -1,0 +1,37 @@
+
+header a, .work, .blog, .twitter, .books, .music {
+	background: transparent;	
+	width: 100%;
+	zoom: 1;
+}
+
+header a {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2F2EC3F,endColorstr=#B2F2EC3F); /* IE6–IE9 */
+}
+
+
+.work {
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#B20AFF00,endColorstr=#B20AFF00); /* IE6–IE9 */
+}
+
+.blog {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#B20BF6FF,endColorstr=#B20BF6FF); /* IE6–IE9 */
+}
+
+.twitter {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#B250ACF9,endColorstr=#B250ACF9); /* IE6–IE9 */
+}
+
+.books {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#B27232F5,endColorstr=#B27232F5); /* IE6–IE9 */
+}
+
+.music{
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2FF0066,endColorstr=#B2FF0066); /* IE6–IE9 */
+}
+
+.headshot {
+	width: 30%;
+	float: left;
+	margin: 0 4% 4% 0;
+}
