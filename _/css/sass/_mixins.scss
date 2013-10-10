@@ -1,0 +1,28 @@
+//CSS3
+//-------------------------------------------------------------------------------*/
+@mixin rgba-background($color, $opacity) {
+    background: $color;
+    background: rgba($color, $opacity);
+}
+
+@mixin transition-all( $duration: 0.2s, $ease: ease) {
+  -moz-transition: $duration $ease;
+    -o-transition: $duration $ease;
+    -ms-transition: $duration $ease;
+    -webkit-transition: $duration $ease;
+    transition: $duration $ease;
+}
+//TYPOGRAPHY
+//-------------------------------------------------------------------------------*/
+
+@mixin font-size-rems($size: $default-font-size, $context: $default-font-size) {
+  font-size: $size + px;
+  font-size: ($size / 16) + rem;
+}
+
+@mixin hide-text {
+  font: 0/0 a; 
+  text-shadow: none;
+  color: transparent;
+}
+

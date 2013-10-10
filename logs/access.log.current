@@ -1,0 +1,7 @@
+180.76.5.157 - - [24/Feb/2013:02:00:02 -0500] "GET / HTTP/1.1" 200 3976 erinmanning.net "-" "Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)" "-"
+157.55.32.57 - - [24/Feb/2013:06:13:02 -0500] "GET /robots.txt HTTP/1.1" 200 123 erinmanning.net "-" "Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)" "-"
+157.55.32.57 - - [24/Feb/2013:06:14:34 -0500] "GET / HTTP/1.1" 200 3976 erinmanning.net "-" "Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)" "-"
+66.249.73.203 - - [24/Feb/2013:06:28:26 -0500] "GET /robots.txt HTTP/1.1" 200 123 www.erinmanning.net "-" "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "-"
+66.249.73.203 - - [24/Feb/2013:06:28:26 -0500] "GET / HTTP/1.1" 200 3976 www.erinmanning.net "-" "DoCoMo/2.0 N905i(c100;TB;W24H16) (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)" "-"
+119.63.196.39 - - [24/Feb/2013:11:21:45 -0500] "GET / HTTP/1.1" 200 3976 www.erinmanning.net "-" "Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)" "-"
+119.63.196.62 - - [24/Feb/2013:13:11:15 -0500] "GET / HTTP/1.1" 200 3976 www.erinmanning.net "-" "Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)" "-"
